@@ -25,3 +25,10 @@ h1 {
     color: white;
     text-decoration: none;
 }
+
+.img-center{
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
