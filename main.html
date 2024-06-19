@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Multitarea</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Web Multitarea</h1>
+        <div class="accordion" id="accordionExample">
+
+            <!-- Invertir Cadena -->
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Invertir Cadena
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <input type="text" id="inputString" class="form-control" placeholder="Ingresa una cadena">
+                        <button class="btn btn-primary mt-2" onclick="invertString()">Invertir</button>
+                        <p class="mt-2" id="outputString"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Determinar Número Primo -->
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Determinar Número Primo
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <input type="number" id="inputPrime" class="form-control" placeholder="Ingresa un número">
+                        <button class="btn btn-primary mt-2" onclick="isPrime()">Determinar</button>
+                        <p class="mt-2" id="outputPrime"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Eliminar Duplicados -->
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Eliminar Duplicados
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <input type="text" id="inputArrayDuplicates" class="form-control" placeholder="Ingresa un arreglo (separado por comas)">
+                        <button class="btn btn-primary mt-2" onclick="removeDuplicates()">Eliminar</button>
+                        <p class="mt-2" id="outputArrayDuplicates"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Calcular Factorial -->
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Calcular Factorial
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <input type="number" id="inputFactorial" class="form-control" placeholder="Ingresa un número">
+                        <button class="btn btn-primary mt-2" onclick="calculateFactorial()">Calcular</button>
+                        <p class="mt-2" id="outputFactorial"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contar Vocales -->
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Contar Vocales
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <input type="text" id="inputVowels" class="form-control" placeholder="Ingresa una cadena">
+                        <button class="btn btn-primary mt-2" onclick="countVowels()">Contar</button>
+                        <p class="mt-2" id="outputVowels"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sumar Arreglo -->
+            <div class="card">
+                <div class="card-header" id="headingSix">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Sumar Arreglo
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <input type="text" id="inputArraySum" class="form-control" placeholder="Ingresa un arreglo (separado por comas)">
+                        <button class="btn btn-primary mt-2" onclick="sumArray()">Sumar</button>
+                        <p class="mt-2" id="outputArraySum"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Encontrar Máximo en Arreglo -->
+            <div class="card">
+                <div class="card-header" id="headingSeven">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            Encontrar Máximo en Arreglo
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <input type="text" id="inputArrayMax" class="form-control" placeholder="Ingresa un arreglo (separado por comas)">
+                        <button class="btn btn-primary mt-2" onclick="findMax()">Encontrar</button>
+                        <p class="mt-2" id="outputArrayMax"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="javascript/function.js"></script>
+</body>
+</html>
